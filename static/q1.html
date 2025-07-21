@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fetchdata() {
+            fetch('/gethello')
+            .then(response => response.text())
+            .then(data =>{
+                document.getElementById('result').innerHTML = data;
+            })
+            .catch(err => console.log("error : " , err));
+        }
+    </script>
+</head>
+<body>
+    <h1>click the button for ajax call</h1>
+    <button onclick="fetchdata()">click to get data</button>
+    <p id="result"></p>
+</body>
+</html>

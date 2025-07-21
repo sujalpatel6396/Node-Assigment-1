@@ -1,0 +1,17 @@
+{
+  "name": "@devpatel8454/env-checker",
+  "version": "1.0.0",
+  "description": "env-checker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dev patel",
+  "license": "MIT",
+  "keywords": [
+    "env"
+  ],
+  "dependencies": {
+    "env-checker": "^1.0.1"
+  }
+}
